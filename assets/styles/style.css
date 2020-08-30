@@ -1,0 +1,126 @@
+@import '/assets/styles/header.css';
+@import '/assets/styles/jumbotron.css';
+@import '/assets/styles/content.css';
+@import '/assets/styles/footer.css';
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+/* 
+font-family: 'Lexend Peta', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* 
+font-family: 'Oswald', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Quicksand', sans-serif;
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #13D666;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #46ff96;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #061B10;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 40px;
+}
+
+.svg {
+  width: 25%;
+  position: absolute;
+  z-index: -1;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.floating-leaf {
+  animation-name: floating-leaf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 14px);
+  }
+
+  100% {
+    transform: translate(0, 1px);
+  }
+}
+
+@keyframes floating-leaf {
+  0% {
+    transform: translate(0, 10px);
+  }
+
+  50% {
+    transform: translate(0, 1px);
+  }
+
+  100% {
+    transform: translate(0, 9px);
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
