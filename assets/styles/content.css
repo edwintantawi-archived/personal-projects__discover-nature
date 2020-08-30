@@ -2,7 +2,7 @@ section.content {
   padding: 70px 0;
   color: white;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 section p a {
